@@ -1,7 +1,7 @@
 javascript:(function(){
     document.onmousemove = function(e){
         var mouseCursor = document.createElement('img');
-        mouseCursor.src = 'https://cur.cursors-4u.net/symbols/sym-1/sym46.cur';
+        mouseCursor.src = 'https://www.bing.com/images/search?view=detailV2&ccid=F3X36484&id=234DFE2CA32C3919C95472CEC16A3A5297A28AEC&thid=OIP.F3X36484vLWUgKLrRD91MgHaIc&mediaurl=https%3a%2f%2fpngimg.com%2fuploads%2fcat%2fcat_PNG50479.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1775f7eb8f38bcb59480a2eb443f7532%3frik%3d7Iqil1I6asHOcg%26pid%3dImgRaw%26r%3d0&exph=2180&expw=1911&q=cat+png&simid=608040762706102960&FORM=IRPRST&ck=A21D37327C0AE34D3B1AB9EE56A9E913&selectedIndex=0&itb=1&idpp=overlayview&ajaxhist=0&ajaxserp=0';
         mouseCursor.style.position = 'absolute';
         mouseCursor.style.pointerEvents = 'none';
         mouseCursor.style.left = e.pageX + 'px';
