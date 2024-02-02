@@ -1,0 +1,4 @@
+javascript:(function(){
+    var text = document.body.innerText;
+    document.body.innerText = text.split('').reverse().join('');
+})();
