@@ -1,4 +1,4 @@
 javascript:(function(){
-    var audio = new Audio('https://www.soundjay.com/misc/sounds/magic-chime-01.mp3'); // Replace with any sound URL
+    var audio = new Audio('https://www.soundjay.com/misc/sounds/magic-chime-01.mp3');
     audio.play();
 })();
