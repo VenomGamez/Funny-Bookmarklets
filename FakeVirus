@@ -1,0 +1,6 @@
+javascript:(function(){
+    alert('Virus Detected!\nClick OK to clean your computer.');
+    setTimeout(function() {
+        alert('Just kidding! Your computer is safe.');
+    }, 2000);
+})();
