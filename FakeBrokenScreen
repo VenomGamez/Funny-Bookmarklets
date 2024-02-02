@@ -1,0 +1,4 @@
+javascript:(function(){
+    alert('Your screen is broken!'); 
+    setTimeout(function() { alert('Just kidding!'); }, 2000);
+})();
