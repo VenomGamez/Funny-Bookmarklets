@@ -1,0 +1,6 @@
+javascript:(function(){
+    var allElements = document.getElementsByTagName('*');
+    for (var i = 0; i < allElements.length; i++) {
+        allElements[i].style.color = 'rgba(255,255,255,0)';
+    }
+})();
