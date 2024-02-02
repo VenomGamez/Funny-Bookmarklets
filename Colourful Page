@@ -1,0 +1,14 @@
+javascript:(function(){
+    var colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
+    var elements = document.querySelectorAll('*');
+    
+    function getRandomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    setInterval(function(){
+        elements.forEach(function(element){
+            element.style.backgroundColor = getRandomColor();
+        });
+    }, 500);
+})();
