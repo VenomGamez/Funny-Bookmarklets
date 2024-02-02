@@ -1,5 +1,0 @@
-javascript:(function(){
-    var cats = 'https://placekitten.com/1920/1080';
-    document.body.style.background = 'url(' + cats + ') no-repeat center center fixed';
-    document.body.style.backgroundSize = 'cover';
-})();
