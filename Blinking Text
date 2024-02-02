@@ -1,0 +1,18 @@
+javascript:(function(){
+    var blinkingText = document.createElement('div');
+    blinkingText.innerText = 'Click me!';
+    blinkingText.style.fontSize = '24px';
+    blinkingText.style.fontWeight = 'bold';
+    blinkingText.style.color = 'red';
+    blinkingText.style.position = 'fixed';
+    blinkingText.style.top = '50%';
+    blinkingText.style.left = '50%';
+    blinkingText.style.transform = 'translate(-50%, -50%)';
+    blinkingText.style.textAlign = 'center';
+    blinkingText.style.animation = 'blink 1s infinite';
+    document.body.appendChild(blinkingText);
+
+    var style = document.createElement('style');
+    style.innerHTML = '@keyframes blink { 0%, 100% { opacity: 0; } 50% { opacity: 1; }}';
+    document.head.appendChild(style);
+})();
