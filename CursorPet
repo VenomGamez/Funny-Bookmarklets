@@ -1,0 +1,11 @@
+javascript:(function(){
+    document.onmousemove = function(e){
+        var mouseCursor = document.createElement('img');
+        mouseCursor.src = 'https://cur.cursors-4u.net/symbols/sym-1/sym46.cur';
+        mouseCursor.style.position = 'absolute';
+        mouseCursor.style.pointerEvents = 'none';
+        mouseCursor.style.left = e.pageX + 'px';
+        mouseCursor.style.top = e.pageY + 'px';
+        document.body.appendChild(mouseCursor);
+    };
+})();
