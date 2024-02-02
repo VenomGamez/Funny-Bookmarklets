@@ -1,0 +1,3 @@
+javascript:(function(){
+    alert('Warning: Bug detected on this website. Report immediately!');
+})();
