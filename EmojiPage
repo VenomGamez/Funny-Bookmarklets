@@ -1,0 +1,15 @@
+javascript:(function(){
+    var emojis = ['😂', '😍', '🤔', '🎉', '😎', '🚀', '💻', '🍕', '❤️', '👻'];
+    var overlay = document.createElement('div');
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.pointerEvents = 'none';
+    document.body.appendChild(overlay);
+
+    setInterval(function(){
+        overlay.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+    }, 1000);
+})();
