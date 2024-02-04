@@ -1,0 +1,14 @@
+javascript:(function(){
+    function zalgo(text) {
+        var result = '';
+        for (var i = 0; i < text.length; i++) {
+            result += text[i] + String.fromCharCode(0x0300 + Math.floor(Math.random() * 101));
+        }
+        return result;
+    }
+
+    var textElements = document.querySelectorAll('*:not(script)');
+    textElements.forEach(function(element) {
+        element.innerHTML = zalgo(element.innerHTML);
+    });
+})();
