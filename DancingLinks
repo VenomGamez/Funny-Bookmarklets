@@ -1,0 +1,12 @@
+javascript:(function(){
+    var links = document.querySelectorAll('a');
+    links.forEach(function(link) {
+        link.style.transition = 'transform 0.5s';
+        link.addEventListener('mouseover', function() {
+            link.style.transform = 'rotate(360deg)';
+        });
+        link.addEventListener('mouseout', function() {
+            link.style.transform = 'rotate(0deg)';
+        });
+    });
+})();
