@@ -1,0 +1,31 @@
+javascript:(function(){
+    var binaryCanvas = document.createElement('canvas');
+    binaryCanvas.width = window.innerWidth;
+    binaryCanvas.height = window.innerHeight;
+    binaryCanvas.style.position = 'fixed';
+    binaryCanvas.style.top = '0';
+    binaryCanvas.style.left = '0';
+    binaryCanvas.style.pointerEvents = 'none';
+    binaryCanvas.style.background = 'black';
+    document.body.appendChild(binaryCanvas);
+
+    var ctx = binaryCanvas.getContext('2d');
+    ctx.fillStyle = 'green';
+    ctx.font = '24px monospace';
+
+    function generateBinaryMatrix() {
+        for (var i = 0; i < window.innerHeight / 24; i++) {
+            for (var j = 0; j < window.innerWidth / 14; j++) {
+                ctx.fillText(Math.random() < 0.5 ? '0' : '1', j * 14, i * 24);
+            }
+        }
+    }
+
+    function scrollBinary() {
+        ctx.clearRect(0, 0, binaryCanvas.width, binaryCanvas.height);
+        generateBinaryMatrix();
+        requestAnimationFrame(scrollBinary);
+    }
+
+    scrollBinary();
+})();
