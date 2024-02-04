@@ -1,0 +1,17 @@
+javascript:(function(){
+    var bsodOverlay = document.createElement('div');
+    bsodOverlay.style.width = '100%';
+    bsodOverlay.style.height = '100%';
+    bsodOverlay.style.position = 'fixed';
+    bsodOverlay.style.top = '0';
+    bsodOverlay.style.left = '0';
+    bsodOverlay.style.pointerEvents = 'none';
+    bsodOverlay.style.background = 'blue';
+    bsodOverlay.style.color = 'white';
+    bsodOverlay.style.fontSize = '24px';
+    bsodOverlay.style.display = 'flex';
+    bsodOverlay.style.alignItems = 'center';
+    bsodOverlay.style.justifyContent = 'center';
+    bsodOverlay.innerText = 'Your computer has encountered a problem and needs to restart.\n\nError Code: 0x0000DEADBEEF';
+    document.body.appendChild(bsodOverlay);
+})();
