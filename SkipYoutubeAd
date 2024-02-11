@@ -1,0 +1,1 @@
+javascript:(function() { var video = document.querySelector('video'); if (video) { video.currentTime = video.duration; } })();
